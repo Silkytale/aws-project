@@ -29,6 +29,7 @@ The purpose of this project is to gain hands-on experience with Amazon EC2 and u
 ### Step 1 - Open the Amazon EC2 Console
 
 I navigated to the Amazon EC2 console and verified that no EC2 instances were currently running.
+![EC2 Dashboard](01-ec2-dashboard.jpg)
 
 ### Step 2 - Start the EC2 Launch Wizard
 
