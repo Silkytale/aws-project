@@ -58,6 +58,8 @@ The instance was deployed into the default VPC.
 
 I created a security group and configured SSH access using TCP port 22 for this training lab.
 
+![EC2 Network Security](05-network-security.PNG)
+
 ### Step 6 - Configure Storage
 
 I configured an 8 GiB gp3 Amazon EBS volume as the root volume for the EC2 instance.
