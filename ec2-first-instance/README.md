@@ -34,7 +34,7 @@ I navigated to the Amazon EC2 console and verified that no EC2 instances were cu
 ### Step 2 - Start the EC2 Launch Wizard
 
 I selected **Launch Instance** to begin creating a new virtual server.
-![Launch EC2 Instance](02-launch-instance.jpg)
+![Launch EC2 Instance](02-launch-instance.jpeg)
 
 ### Step 3 - Configure the EC2 Instance
 
