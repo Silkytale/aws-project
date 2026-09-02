@@ -63,7 +63,7 @@ I created a security group and configured SSH access using TCP port 22 for this 
 ### Step 6 - Configure Storage
 
 I configured an 8 GiB gp3 Amazon EBS volume as the root volume for the EC2 instance.
-
+![EC2 Storage Configuration](06-storage.PNG)
 ### Step 7 - Launch the Instance
 
 After reviewing the configuration, I launched the EC2 instance successfully.
