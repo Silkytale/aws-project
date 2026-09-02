@@ -80,8 +80,4 @@ This lab helped reinforce my understanding of:
 - How SSH key pairs are used to securely access Linux EC2 instances
 - How EC2 instances are deployed inside an Amazon VPC
 
-## Project Status
-
-🚧 **In Progress**
-
-I will continue updating this project as I complete additional EC2 labs.
+## Completed
