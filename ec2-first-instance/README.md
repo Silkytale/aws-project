@@ -51,7 +51,7 @@ I selected **Amazon Linux 2023** as the Amazon Machine Image (AMI).
 I selected a **t3.small** instance.
 
 The instance type determines the amount of CPU, memory, networking capacity, and other resources available to the virtual server.
-
+![EC2 Instance Type](04-instance-type%202.png)
 ### Step 5 - Configure Networking and Security
 
 The instance was deployed into the default VPC.
