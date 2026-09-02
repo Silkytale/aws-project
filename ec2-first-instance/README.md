@@ -1,4 +1,4 @@
-# Launching My First Amazon EC2 Instance
+# Deploying and Configuring an Amazon EC2 Instance
 
 ## Project Overview
 
