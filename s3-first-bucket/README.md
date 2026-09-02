@@ -1,4 +1,4 @@
-# Creating My First Amazon S3 Bucket
+# Creating and Configuring an Amazon S3 Bucket
 
 ## Project Overview
 
