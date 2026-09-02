@@ -67,7 +67,7 @@ I configured an 8 GiB gp3 Amazon EBS volume as the root volume for the EC2 insta
 ### Step 7 - Launch the Instance
 
 After reviewing the configuration, I launched the EC2 instance successfully.
-
+![EC2 Instance Running](07-ec2-running.PNG)
 ## What I Learned
 
 This lab helped reinforce my understanding of:
