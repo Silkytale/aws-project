@@ -77,7 +77,6 @@ This lab helped reinforce my understanding of:
 - How instance types determine compute resources
 - How EBS provides persistent block storage
 - How security groups control network access
-- How SSH key pairs are used to securely access Linux EC2 instances
 - How EC2 instances are deployed inside an Amazon VPC
 
 ## Completed
