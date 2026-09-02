@@ -43,7 +43,7 @@ I named the instance:
 `MyFirstEC2Instance`
 
 I selected **Amazon Linux 2023** as the Amazon Machine Image (AMI).
-![Amazon Linux 2023 AMI Selection](03-ami-selection.png)
+![Amazon Linux 2023 AMI Selection](./03-ami-selection.png)
 ### Step 4 - Select an Instance Type
 
 I selected a **t3.small** instance.
