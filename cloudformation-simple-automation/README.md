@@ -16,9 +16,11 @@ The purpose of this project is to understand how to automate the creation of AWS
 I navigated to the AWS CloudFormation console and selected "Choose an existing template" to begin creating my stack.
 
 ![Step 1](step1-open-console.png)
+
 ## Step 2 – Create Stack from Template
-I selected "Template is ready" and used the Amazon S3 URL provided in the course to specify the template source.
-![Step 2](/images/step2-create-stack.png)
+I selected "Template is ready" and used the "Upload a template file" option to upload my `ec2instance.yaml` file.
+
+![Step 2](step2-create-stack.png)
 
 ## Step 3 – Specify Stack Details
 I named the stack `MyFirstCloudFormationStack` and specified the required parameters for the resources.
