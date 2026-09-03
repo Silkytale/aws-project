@@ -25,7 +25,7 @@ I navigated to the Amazon S3 console to begin creating a new bucket.
 ### Step 2 - Create an S3 Bucket
 
 I created a new S3 bucket and reviewed the bucket configuration options.
-
+![S3 Bucket Settings](02-bucket-settings.PNG)
 ### Step 3 - Review Block Public Access
 
 I reviewed the Block Public Access settings used to help prevent unintended public access.
