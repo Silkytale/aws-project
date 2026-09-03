@@ -20,6 +20,7 @@ The goal of this lab is to gain hands-on experience with S3 storage, permissions
 ### Step 1 - Open Amazon S3
 
 I navigated to the Amazon S3 console to begin creating a new bucket.
+![Amazon S3 Create Bucket](01-open-s3.PNG)
 
 ### Step 2 - Create an S3 Bucket
 
