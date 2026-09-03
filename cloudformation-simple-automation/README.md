@@ -23,8 +23,9 @@ I selected "Template is ready" and used the "Upload a template file" option to u
 ![Step 2](step2-create-stack.png)
 
 ## Step 3 – Specify Stack Details
-I named the stack `MyFirstCloudFormationStack` and specified the required parameters for the resources.
-![Step 3](/images/step3-specify-details.png)
+I named the stack `CFSdemo1` and specified the required parameters for the AMI and SSH access.
+
+![Step 3](step3-specify-details.png)
 
 ## Step 4 – Configure Stack Options
 I configured stack options, including adding appropriate tags to track resources.
