@@ -12,7 +12,6 @@ The goal of this lab is to gain hands-on experience with S3 storage, permissions
 - S3 Buckets
 - S3 Objects
 - Block Public Access
-- Bucket ARN
 - Object Permissions
 
 ## Project Steps
@@ -48,10 +47,6 @@ This lab reinforced my understanding of:
 - How S3 buckets are created
 - How Block Public Access helps protect buckets
 - How objects are uploaded and managed
-- How S3 permissions work
-- What an S3 bucket ARN represents
 - How S3 uses object key prefixes to simulate folders
 
-## Project Status
 
-🚧 In Progress
