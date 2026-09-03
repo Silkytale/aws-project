@@ -28,7 +28,7 @@ I named the stack `CFSdemo1` and specified the required parameters for the AMI a
 
 ## Step 4 – Configure Stack Options
 I configured stack options, including adding appropriate tags to track resources.
-![Step 4](/images/step4-options.png)
+cloudformation-simple-automation/step4-configure-options.png
 
 ## Step 5 – Review and Create
 I reviewed the template configuration, acknowledged the IAM capabilities required, and clicked **Submit** to create the stack.
