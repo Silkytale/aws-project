@@ -37,8 +37,9 @@ I reviewed the template configuration, acknowledged the IAM capabilities require
 ![Step 5](Step5.png)
 
 ## Step 6 – Verify Resources
-I monitored the stack events until it reached `CREATE_COMPLETE` and verified the resources created in the "Resources" tab.
-![Step 6](/images/step6-verify.png)
+I monitored the stack events until it reached `CREATE_COMPLETE` and verified the outputs created by the stack, including the EC2 instance ID and public DNS.
+
+![Step 6](Step6.png)
 
 ## What I Learned
 This lab helped reinforce my understanding of:
