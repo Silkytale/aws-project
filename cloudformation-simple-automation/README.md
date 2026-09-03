@@ -32,8 +32,9 @@ I configured stack options, including adding appropriate tags to track resources
 ![Step 4](step4-configure-options.png)
 
 ## Step 5 – Review and Create
-I reviewed the template configuration, acknowledged the IAM capabilities required, and clicked **Submit** to create the stack.
-![Step 5](/images/step5-review.png)
+I reviewed the template configuration, acknowledged the IAM capabilities required, and clicked **Submit**. Once the stack reached `CREATE_COMPLETE`, I verified the stack details.
+
+![Step 5](Step5.png)
 
 ## Step 6 – Verify Resources
 I monitored the stack events until it reached `CREATE_COMPLETE` and verified the resources created in the "Resources" tab.
