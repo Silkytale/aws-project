@@ -33,7 +33,7 @@ I reviewed the Block Public Access settings used to help prevent unintended publ
 ### Step 4 - Upload Objects
 
 I uploaded files to the S3 bucket and verified that the objects were stored successfully.
-
+![S3 Upload Objects](04-upload-objects.PNG)
 ### Step 5 - Review Object Permissions
 
 I reviewed permissions associated with the uploaded objects.
