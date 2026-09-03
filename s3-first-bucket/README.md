@@ -34,17 +34,11 @@ I reviewed the Block Public Access settings used to help prevent unintended publ
 
 I uploaded files to the S3 bucket and verified that the objects were stored successfully.
 ![S3 Upload Objects](04-upload-objects.PNG)
-### Step 5 - Review Object Permissions
+### Step 5 - Organize Objects Using S3 Folders
 
-I reviewed permissions associated with the uploaded objects.
+I created an S3 folder and placed an object inside it to understand how Amazon S3 organizes objects using prefixes rather than traditional filesystem folders.
 
-### Step 6 - Review the Bucket ARN
-
-I located and reviewed the Amazon Resource Name (ARN) used to uniquely identify the S3 bucket.
-
-### Step 7 - Understand S3 Folders
-
-I learned that folders in Amazon S3 are represented by object key prefixes rather than traditional filesystem folders.
+![S3 Folder Organization](05-s3-folder.PNG)
 
 ## What I Learned
 
