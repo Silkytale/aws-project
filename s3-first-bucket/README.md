@@ -25,9 +25,11 @@ I navigated to the Amazon S3 console to begin creating a new bucket.
 
 I created a new S3 bucket and reviewed the bucket configuration options.
 ![S3 Bucket Settings](02-bucket-settings.PNG)
+
 ### Step 3 - Review Block Public Access
 
 I reviewed the S3 Block Public Access settings and configured them according to the requirements of the lab.
+
 ![S3 Block Public Access](03-block-public-access.png)
 ### Step 4 - Upload Objects
 
