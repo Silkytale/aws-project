@@ -12,7 +12,7 @@ The purpose of this project is to understand how to automate the creation of AWS
 - AWS IAM
 
 ## Step 1 – Open CloudFormation Console
-I navigated to the AWS CloudFormation console to begin creating a new stack.
+I navigated to the AWS CloudFormation console and selected "Choose an existing template" to begin creating my stack.
 ![Step 1](/images/step1-open-console.png)
 
 ## Step 2 – Create Stack from Template
