@@ -29,7 +29,7 @@ I created a new S3 bucket and reviewed the bucket configuration options.
 ### Step 3 - Review Block Public Access
 
 I reviewed the Block Public Access settings used to help prevent unintended public access.
-![S3 Block Public Access](03-block-public-access.PNG)
+![S3 Block Public Access](03-block-public-access.png)
 ### Step 4 - Upload Objects
 
 I uploaded files to the S3 bucket and verified that the objects were stored successfully.
