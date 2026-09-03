@@ -24,7 +24,7 @@ I selected "Template is ready" and used the "Upload a template file" option to u
 
 ## Step 3 – Specify Stack Details
 I named the stack `CFSdemo1` and specified the required parameters for the AMI and SSH access.
-cloudformation-simple-automation/step3-specify-details.png
+![Step 3](step3-specify-details.png)
 
 ## Step 4 – Configure Stack Options
 I configured stack options, including adding appropriate tags to track resources.
