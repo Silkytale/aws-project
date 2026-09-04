@@ -20,9 +20,10 @@ I navigated to the CloudWatch Alarms console to begin creating a new alarm.
 I created a CloudWatch Alarm based on the CPU Utilization of the `CloudWatchTest` instance. I set the threshold to greater than 15% and named the alarm `Cloudwatchtesthighcpu`.
 
 ![Step 3](Step3.png)
-## Step 4 – Run Stress
-I connected to the instance and ran the `stress -c 2` command to generate CPU load.
-![Step 4](step4.png)
+## Step 4 – Install Stress and Run Load
+I connected to the EC2 instance using Instance Connect. I installed the `stress` package, and then ran the `stress -c 1 -t 3600` command to generate high CPU load.
+
+![Step 4](Step4.png)
 
 ## Step 5 – Verify the Alarm
 I waited for the alarm to trigger and confirmed the state changed to `In alarm` on the CloudWatch dashboard.
