@@ -12,7 +12,7 @@ The purpose of this project is to understand how to create CloudWatch alarms, tr
 
 ## Step 1 – Launch an EC2 Instance
 I launched a `t3.micro` instance named `CloudWatchTest` and ensured it was running in the default VPC.
-Step1cw.png
+![Step 1](Step1cw.png)
 ## Step 2 – Open CloudWatch
 I navigated to the CloudWatch Alarms console to begin creating a new alarm.
 ![Step 2](step2.png)
