@@ -17,9 +17,10 @@ I launched a `t3.micro` instance named `CloudWatchTest` and ensured it was runni
 I navigated to the CloudWatch Alarms console to begin creating a new alarm.
 ![Step 2](Step2.png)
 ## Step 3 – Create a CloudWatch Alarm
-I created a CloudWatch Alarm based on the CPU Utilization of the instance. I set the threshold to greater than 15% and created a new SNS topic named `MyCloudWatchAlarm` to receive notifications.
-![Step 3](step3.png)
+I created a CloudWatch Alarm based on the CPU Utilization of the `CloudWatchTest` instance. I set the threshold to greater than 15% and named the alarm `Cloudwatchtesthighcpu`.
 
+![Step 3](step3.png)
+ 
 ## Step 4 – Run Stress
 I connected to the instance and ran the `stress -c 2` command to generate CPU load.
 ![Step 4](step4.png)
