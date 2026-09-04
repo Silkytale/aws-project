@@ -27,11 +27,8 @@ I connected to the EC2 instance using Instance Connect. I installed the `stress`
 
 ## Step 5 – Verify the Alarm
 I waited for the alarm to trigger and confirmed the state changed to `In alarm` on the CloudWatch dashboard.
-![Step 5](step5.png)
+![Step 5](Step5.png)
 
-## Step 6 – Clean Up
-I stopped the stress command using `Ctrl + C`, terminated the EC2 instance, and deleted the alarm and SNS topic to avoid ongoing charges.
-![Step 6](step6.png)
 
 ## What I Learned
 This lab helped reinforce my understanding of:
