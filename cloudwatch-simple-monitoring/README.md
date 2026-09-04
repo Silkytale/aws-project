@@ -15,8 +15,7 @@ I launched a `t3.micro` instance named `CloudWatchTest` and ensured it was runni
 ![Step 1](Step1cw.png)
 ## Step 2 – Open CloudWatch
 I navigated to the CloudWatch Alarms console to begin creating a new alarm.
-![Step 2](step2.png)
-
+![Step 2](Step2.png)
 ## Step 3 – Create a CloudWatch Alarm
 I created a CloudWatch Alarm based on the CPU Utilization of the instance. I set the threshold to greater than 15% and created a new SNS topic named `MyCloudWatchAlarm` to receive notifications.
 ![Step 3](step3.png)
