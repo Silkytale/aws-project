@@ -1,47 +1,40 @@
-# AWS IAM & Organizations Governance Lab
-
-## 📌 Project Overview
-This project demonstrates secure identity management, least privilege access control, and multi-account governance using AWS Organizations. It covers IAM Users, Groups, Roles, custom JSON policies, and the IAM Policy Simulator. Based on hands-on labs from Adrian Cantrill's AWS SAA-C03 course.
-
----
-
 ## Phase 1: Identity Foundation & Least Privilege
 
 ### 🏗️ Architecture & Design Decisions
-In this phase, I designed an identity structure based on **AWS Best Practices**:
-*   **No Direct User Policies:** IAM policies are attached exclusively to Groups, not individual Users. This ensures scalability and easier access management.
-*   **Least Privilege:** Custom JSON policies were written to grant only the minimum permissions required for a specific job function.
-*   **Roles over Users:** An IAM Role was created for EC2 instances to avoid hardcoding long-term access keys on the server.
+In this phase, I deployed a simple identity permissions lab to demonstrate the principle of Least Privilege using Infrastructure as Code (CloudFormation):
+*   **Automated Deployment:** Used a CloudFormation template to provision the IAM User, S3 Buckets, and custom policy, rather than manual console clicking.
+*   **Explicit Deny:** Created a custom IAM policy (`AllowAllS3ExceptCats`) that allows full S3 access but explicitly denies access to a specific bucket. This proves that "Deny" rules override "Allow" rules in AWS.
+*   **User Testing:** Logged in as the restricted user (`Sally`) to validate that the policy works exactly as intended in a live environment.
 
 ### 📸 Walkthrough & Screenshots
 *(Note: Upload your actual screenshots to this folder and replace these text placeholders)*
 
-**1. IAM Users and Groups Setup**
-*   Created 3 users: `Alice-Admin`, `Bob-Dev`, `Charlie-Audit`.
-*   Created 3 groups: `Admins`, `Developers`, `Auditors`.
-*   *[Insert Screenshot: IAM Console showing Users and Groups]*
+**1. Infrastructure as Code (CloudFormation)**
+*   **Action:** Deployed the `demo_cfn.yaml` template to create:
+    *   IAM User: `Sally`
+    *   S3 Bucket: `iam-catpics` (The restricted bucket)
+    *   S3 Bucket: `iam-animalpics` (The allowed bucket)
+    *   IAM Policy: `AllowAllS3ExceptCats`
+*   *[Insert Screenshot: CloudFormation Stack showing CREATE_COMPLETE for all resources]*
 
-**2. Custom Least-Privilege Policies**
-*   **Developers Policy:** Created a custom policy allowing `Bob-Dev` to start and stop EC2 instances, but *only* if the instance is tagged with `Environment: Dev`. 
-    *   *[Insert Screenshot: JSON Policy Editor showing the Condition block]*
-*   **Auditors Policy:** Created a custom policy allowing `Charlie-Audit` read-only access to IAM, CloudTrail, and Organizations to perform security audits.
+**2. Custom Least-Privilege Policy**
+*   **Action:** Viewed the JSON for the `AllowAllS3ExceptCats` policy. It uses an `Allow` statement for `s3:*` on `*`, and a `Deny` statement specifically targeting the `catpics` bucket ARN.
+*   *[Insert Screenshot: JSON Policy Editor showing the Allow and Deny blocks]*
 
-**3. IAM Role for EC2 (PassRole)**
-*   Created a role named `EC2-S3-ReadOnly-Role`.
-*   **Trust Policy:** Configured to allow the EC2 service (`ec2.amazonaws.com`) to assume this role.
-*   **Permissions:** Attached an S3 ReadOnly policy. 
-*   *Why?* This eliminates the need to store AWS credentials on the EC2 instance itself.
-    *   *[Insert Screenshot: Trust Relationship JSON for the EC2 Role]*
+**3. IAM User Setup**
+*   **Action:** Confirmed the IAM User `Sally` was created via CloudFormation. Note that for this specific demo, the policy was attached directly to the user.
+*   *[Insert Screenshot: IAM User 'Sally' details page showing the attached policy]*
 
-**4. Testing Least Privilege (IAM Policy Simulator)**
-To prove the policies work as intended, I used the IAM Policy Simulator:
-*   **Test Case A:** Simulated `ec2:StartInstances` for `Bob-Dev` on an instance tagged `Environment: Dev`. Result: **Allowed**.
-*   **Test Case B:** Simulated `ec2:StartInstances` for `Bob-Dev` on an instance tagged `Environment: Prod`. Result: **Denied**.
-    *   *[Insert Screenshots: Policy Simulator showing Allowed vs Denied]*
+**4. Testing Least Privilege (Live User Test)**
+*   **Action:** Logged into a separate browser as `Sally` to test the policy in practice.
+*   **Test Case A (Allowed):** Successfully uploaded a file (`thor.jpg`) to the `animalpics` bucket.
+    *   *[Insert Screenshot: Successful S3 upload as Sally]*
+*   **Test Case B (Denied):** Attempted to access the `catpics` bucket. Access was blocked, resulting in an error.
+    *   *[Insert Screenshot: Access Denied/Error as Sally trying to view catpics]*
 
 ### 🛠️ Skills Demonstrated
 *   AWS Identity and Access Management (IAM)
-*   JSON Policy Writing (Condition blocks, Resource ARNs)
+*   AWS CloudFormation (Infrastructure as Code)
+*   JSON Policy Writing (Allow vs. Explicit Deny)
 *   Least Privilege Principles
-*   IAM Roles and Trust Policies
-*   AWS Policy Simulator
+*   Live User Testing & Validation
