@@ -15,8 +15,7 @@ In this phase, I deployed a simple identity permissions lab to demonstrate the p
     *   S3 Bucket: `iam-catpics` (The restricted bucket)
     *   S3 Bucket: `iam-animalpics` (The allowed bucket)
     *   IAM Policy: `AllowAllS3ExceptCats`
-*   *[Insert Screenshot: CloudFormation Stack showing CREATE_COMPLETE for all resources]*
-
+ 
 **2. Custom Least-Privilege Policy**
 *   **Action:** Viewed the JSON for the `AllowAllS3ExceptCats` policy. It uses an `Allow` statement for `s3:*` on `*`, and a `Deny` statement specifically targeting the `catpics` bucket ARN.
 *   *[Insert Screenshot: JSON Policy Editor showing the Allow and Deny blocks]*
