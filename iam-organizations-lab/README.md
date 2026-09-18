@@ -7,7 +7,7 @@ In this phase, I deployed a simple identity permissions lab to demonstrate the p
 *   **User Testing:** Logged in as the restricted user (`Sally`) to validate that the policy works exactly as intended in a live environment.
 
 ### 📸 Walkthrough & Screenshots
- ![CloudFormation Stack](cloudformation.png)
+ <img src="cloudformation.png" alt="CloudFormation Stack">
 
 **1. Infrastructure as Code (CloudFormation)**
 *   **Action:** Deployed the `demo_cfn.yaml` template to create:
